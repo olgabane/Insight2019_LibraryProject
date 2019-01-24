@@ -18,6 +18,7 @@ def try1():
 @app.route('/')
 @app.route('/Week2Demo')
 def Week2Demo():
-	Libraries = list(df['LIBNAME_x'])
-	return render_template('dropdown.html', colours = Libraries)
-	
+    Libraries = list(df['LIBNAME_x'])
+    #HelloList = ["hi", "hello"]
+    return render_template('dropdown.html', colours = Libraries)
+
