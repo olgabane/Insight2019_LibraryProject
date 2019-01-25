@@ -4,16 +4,16 @@
 </head>
 <body>
     Libraries:
-    
-    <select name= colours method="GET" action="/">
-        {% for colour in colours %}
-        <option value= "{{colour}}" SELECTED>{{colour}}</option>"
+
+<form class="LIBRARYSelection" method="POST" action="/submitted">
+    <select name = "Name" id = "variable" name= libs method="GET" action="/">
+        {% for library in libs %}
+        <option value= "{{library}}" SELECTED>{{library}}</option>"
         {% endfor %}
     </select>
-    
-    </select>
-    
-    </br> Libraries:
-    
+    <input class="btn" type="submit" value="submit">
+</form>
+
+
 </body>
 </html>
