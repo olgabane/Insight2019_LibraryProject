@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Dropdown</title>
+</head>
+<body>
+    Libraries:
+    
+    <select name= colours method="GET" action="/">
+        {% for colour in colours %}
+        <option value= "{{colour}}" SELECTED>{{colour}}</option>"
+        {% endfor %}
+    </select>
+    
+    </br> Libraries:
+    
+    <select name= colours method="GET" action="/">
+        {% for colour in colours %}
+        <option value= "{{colour}}" SELECTED>{{colour}}</option>"
+        {% endfor %}
+    </select>
+    
+    select = request.args.get('colours')
+    
+    {{ select }}
+    
+    {{ Week2Demo }}
+    
+    </br> Test3:
+    <form name="Item_1" action="results.html" method='POST'>
+        <select name= tests method="GET" action="/">
+            {% for test in tests %}
+            <option value= "{{test}}" SELECTED>{{test}}</option>"
+            {% endfor %}
+        </select>
+    </form>
+    
+    </br> Usage prediction: </br>
+
+
+</body>
+</html>

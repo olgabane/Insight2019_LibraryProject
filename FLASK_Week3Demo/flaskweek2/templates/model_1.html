@@ -1,0 +1,21 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Dropdown</title>
+</head>
+<body>
+    Libraries:
+
+<form class="LIBRARYSelection" method="POST" action="/submitted">
+    <select name = "Name" id = "variable" name= libs method="GET" action="/">
+        {% for library in libs %}
+        <option value= "{{library}}" SELECTED>{{library}}</option>"
+        {% endfor %}
+    </select>
+    <input class="btn" type="submit" value="submit">
+</form>
+
+    Second thing:
+    str(rfmodel)
+
+</body>
+</html>

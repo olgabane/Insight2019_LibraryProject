@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Model</title>
+</head>
+<body>
+    
+    <form method = 'POST'>
+    {% for val in list_of_feats %}
+        {{val}}
+        Val: <input name = "something" type = "number" value = {{val}}></br>
+    {% endfor %}
+    <input name = "dummynamechange" type="submit" value="submit">
+    </form>
+    
+    <form method = 'POST'>
+        {% for k, val in dict_of_feats.items() %}
+            {{k}}: <input name = "something" type = "number" value = {{val}}></br>
+        {% endfor %}
+    <input name = "dummynamechange" type="submit" value="submit">
+    </form>
+    
+</body>
+</html>

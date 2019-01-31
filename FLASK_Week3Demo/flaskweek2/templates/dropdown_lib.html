@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Dropdown</title>
+</head>
+
+<style>
+body {
+        background-size: cover;
+        background-image: url("../static/mainbg.png");
+}
+</style>
+
+<body>
+    </br>
+    </br>
+    <font color="white">Please choose library:</font>
+
+<form class="LIBRARYSelection" method="POST" action="/model5">
+    <select name = "Name" id = "variable" name= libs method="GET" action="/">
+        {% for library in libs %}
+        <option value= "{{library}}" SELECTED>{{library}}</option>"
+        {% endfor %}
+    </select>
+    <input class="btn" type="submit" value="submit">
+</form>
+
+</body>
+</html>
