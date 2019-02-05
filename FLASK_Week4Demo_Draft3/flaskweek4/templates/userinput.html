@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Model</title>
+</head>
+<body>
+    
+    <img src="./static/feature_img.png" alt="features">
+    
+    <form method = 'POST' action = '/model5submit'>
+    <p style = "color:blue; font-size:150%; font-weight: bold; display:inline;"> Resources:</p></br>
+    <p style = "font-weight: bold; display:inline;">Collections:</p></br>
+    Video:&ensp;&ensp;&ensp;&ensp;&ensp; <input name = "feat22" type = "number" value = {{list_of_feats[21]}}></br>
+    Print books:&ensp; <input name = "feat3" type = "number" value = {{list_of_feats[2]}}></br>
+    Audio: &ensp;&ensp;&ensp;&ensp;&ensp;<input name = "feat21" type = "number" value = {{list_of_feats[20]}}></br>
+    eBooks: &ensp;&ensp;&ensp;&ensp;<input name = "feat7" type = "number" value = {{list_of_feats[6]}}>
+    </br>
+    </br>
+    <p style = "font-weight: bold; display:inline;">Programs:</p></br>
+    Kid's:&ensp;&ensp;&ensp;&ensp;&ensp; <input name = "feat10" type = "number" value = {{list_of_feats[9]}}></br>
+    Other:&ensp;&ensp;&ensp;&ensp;&ensp; <input name = "feat23" type = "number" value = {{list_of_feats[22]}}></br>
+    Young adult: <input name = "feat20" type = "number" value = {{list_of_feats[19]}}>
+    </br>
+    </br>
+    <p style = "font-weight: bold; display:inline;">Services:</p></br>
+    Hours open: &ensp;&ensp;<input name = "feat9" type = "number" value = {{list_of_feats[8]}}></br>
+    Loans received: <input name = "feat12" type = "number" value = {{list_of_feats[11]}}></br>
+    Loans sent: &ensp;&ensp;&ensp;<input name = "feat13" type = "number" value = {{list_of_feats[12]}}></br>
+    Central libraries: <input name = "feat6" type = "number" value = {{list_of_feats[5]}}></br>
+    Branch libraries: <input name = "feat4" type = "number" value = {{list_of_feats[3]}}></br>
+    Bookmobile: &ensp;&ensp;<input name = "feat2" type = "number" value = {{list_of_feats[1]}}>
+    </br></br>
+    
+    <p style = "color:orange; font-size:150%; font-weight: bold; display:inline;">Staff:</p></br>
+    Other staff:&ensp;&ensp;&ensp;&ensp; <input name = "feat17" type = "number" value = {{list_of_feats[16]}}></br>
+    Librarians:&ensp;&ensp;&ensp;&ensp; <input name = "feat11" type = "number" value = {{list_of_feats[10]}}></br>
+    Libs with Masters: <input name = "feat14" type = "number" value = {{list_of_feats[13]}}>
+    </br></br>
+    
+    <p style = "color:purple; font-size:150%; font-weight: bold; display:inline;">Spending:</p></br>
+    <p style = "font-weight: bold; display:inline;">Collection:</p></br>
+    Print: &ensp;&ensp;&ensp;&ensp;<input name = "feat18" type = "number" value = {{list_of_feats[17]}}></br>
+    Other : &ensp;&ensp;&ensp;<input name = "feat15" type = "number" value = {{list_of_feats[14]}}></br>
+    Electronic: <input name = "feat8" type = "number" value = {{list_of_feats[7]}}>
+    </br>
+    </br>
+    <p style = "font-weight: bold; display:inline;">Other:</p></br>
+    Capital expenses: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input name = "feat5" type = "number" value = {{list_of_feats[4]}}></br>
+    Other operating expenses: <input name = "feat16" type = "number" value = {{list_of_feats[15]}}>
+    </br></br>
+    
+    
+    <p style = "font-weight: bold; display:inline;">Staff:</p></br>
+    Salaries: <input name = "feat19" type = "number" value = {{list_of_feats[18]}}></br>
+    Benefits: <input name = "feat1" type = "number" value = {{list_of_feats[0]}}>
+    
+     </br><input name = "pop" style="display: none;" type = "number" value = {{pop}}>
+     <input name = "button" type="submit" value="submit">
+     </form>
+    
+
+
+</body>
+</html>
