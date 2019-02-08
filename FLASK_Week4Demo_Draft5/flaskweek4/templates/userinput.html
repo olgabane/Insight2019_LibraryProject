@@ -1,0 +1,145 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Model</title>
+</head>
+<body style ='font-family: arial;' bgcolor = 'D9D9D9'>
+    
+    <div align = "center" >
+        <img src="./static/bibliopal_transparent.png" alt="features">
+    </div>
+    
+    <div align = "center" >
+    <img src="./static/feature_img_2.png" alt="features" width = 800>
+    </div>
+
+<form method = 'POST' action = '/model5submit'>
+    <div class="row">
+    <!-- extra column on the side -->
+    <div class="column" style = "width: 20%; float:left; margin:0; padding:0px 0px 0px 0px;">
+    </br>
+    </div>
+    
+    <div class="column" align="left" style = "width: 15%; float:left; margin:0; padding:0px 0px 0px 0px;">
+    <p style = "color:blue; font-size:150%; font-weight: bold; display:inline;"> Resources:</p></br>
+    <p style = "font-weight: bold; display:inline; color:black">Collections:</p></br>
+    Video: </br>
+    Print books: </br>
+    Audio: </br>
+    eBooks:</br>
+    </br>
+    <p style = "font-weight: bold; display:inline;">Programs:</p></br>
+    Kid's: </br>
+    Other: </br>
+    Young adult: </br>
+    </br>
+    <p style = "font-weight: bold; display:inline;">Services:</p></br>
+    Hours open:</br>
+    Loans received:</br>
+    Loans sent:</br>
+    Central libraries:</br>
+    Branch libraries:</br>
+    Bookmobile:
+    </div>
+    
+    <div class="column" align="left" style = "width: 25%; float:left; margin:0; padding:0px 0px 0px 0px;">
+    <p style = "color:transparent; font-size:150%; font-weight: bold; display:inline;"> Resources:</p></br>
+    </br>
+    <!-- Collections:-->
+    <input  name = "feat22" type = "number" min="0" value = {{list_of_feats[21]}}></br>
+    <input name = "feat3" type = "number" min="0" value = {{list_of_feats[2]}}></br>
+    <input name = "feat21" type = "number" min="0" value = {{list_of_feats[20]}}></br>
+    <input name = "feat7" type = "number" min="0" value = {{list_of_feats[6]}}>
+    </br>
+    </br>
+    </br>
+    <!--Programs:-->
+    <input name = "feat10" type = "number" min="0" value = {{list_of_feats[9]}}></br>
+    <input name = "feat23" type = "number" min="0" value = {{list_of_feats[22]}}></br>
+    <input name = "feat20" type = "number" min="0" value = {{list_of_feats[19]}}>
+    </br>
+    </br>
+    </br>
+    <!--Services:-->
+    <input name = "feat9" type = "number" min="0" value = {{list_of_feats[8]}}></br>
+    <input name = "feat12" type = "number" min="0" value = {{list_of_feats[11]}}></br>
+    <input name = "feat13" type = "number" min="0" value = {{list_of_feats[12]}}></br>
+    <input name = "feat6" type = "number" min="0" value = {{list_of_feats[5]}}></br>
+    <input name = "feat4" type = "number" min="0" value = {{list_of_feats[3]}}></br>
+    <input name = "feat2" type = "number" min="0" value = {{list_of_feats[1]}}>
+    </br></br>
+    <!--
+    <div align = "right">
+    <input name = "button" type="submit" value="submit">
+    </div>
+    -->
+    </div>
+    
+    <div class="column" align="left" style = "width: 15%; float:left; margin:0 padding:0px 0px 0px 0px;">
+    <p style = "color:orange; font-size:150%; font-weight: bold; display:inline;">Staff:</p></br>
+    Other staff:</br>
+    Librarians:</br>
+    Libs with Masters:</br>
+    </br>
+    <p style = "color:purple; font-size:150%; font-weight: bold; display:inline;">Spending:</p></br>
+    <!--Collections:-->
+    <p style = "font-weight: bold; display:inline;">Collections:</p></br>
+    Print:</br>
+    Other :</br>
+    Electronic:</br>
+    </br>
+    <!--Other:-->
+    <p style = "font-weight: bold; display:inline;">Other:</p></br>
+    Capital:</br>
+    Other operating:</br>
+    </br>
+    <!--Staff:-->
+    <p style = "font-weight: bold; display:inline;">Staff:</p></br>
+    Salaries:</br>
+    Benefits:</br>
+    </div>
+    
+    
+    <div class="column" align="left" style = "width: 25%; float:left; margin:0 padding:0px 0px 0px 0px;">
+    <p style = "color:transparent; font-size:150%; font-weight: bold; display:inline;">Staff:</p></br>
+    <input name = "feat17" type = "number" min="0" value = {{list_of_feats[16]}}></br>
+    <input name = "feat11" type = "number" min="0" value = {{list_of_feats[10]}}></br>
+    <input name = "feat14" type = "number" min="0" value = {{list_of_feats[13]}}>
+    </br></br>
+    
+    <p style = "color:transparent; font-size:150%; font-weight: bold; display:inline;">Spending:</p></br>
+    </br>
+    <!--Collections:-->
+    <input name = "feat18" type = "number" min="0" value = {{list_of_feats[17]}}></br>
+    <input name = "feat15" type = "number" min="0" value = {{list_of_feats[14]}}></br>
+    <input name = "feat8" type = "number" min="0" value = {{list_of_feats[7]}}>
+    </br>
+    </br>
+    <!--Other:-->
+    </br>
+    <input name = "feat5" type = "number" min="0" value = {{list_of_feats[4]}}></br>
+    <input name = "feat16" type = "number" min="0" value = {{list_of_feats[15]}}>
+    </br>
+    </br>
+     <!--Staff:-->
+    </br>
+    <input name = "feat19" type = "number" min="0" value = {{list_of_feats[18]}}></br>
+    <input name = "feat1" type = "number" min="0" value = {{list_of_feats[0]}}>
+    </br><input name = "pop" style="display: none;" type = "number" value = {{pop}}>
+    </br></br></br>
+    
+    <!-- extra column on the side -->
+    <div class="column" style = "width: 10%; float:left; margin:0; padding:0px 0px 0px 0px;">
+    </br>
+    </div>
+
+    </div>
+    <div class="row">
+    <div align = "center">
+        <input name = "button" type="submit" value="submit">
+    </div>
+    </div>
+     </form>
+
+
+</body>
+</html>

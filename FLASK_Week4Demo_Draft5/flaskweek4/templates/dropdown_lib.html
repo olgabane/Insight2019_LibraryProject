@@ -1,0 +1,31 @@
+ <head>
+    <meta charset="UTF-8">
+        <title>Dropdown</title>
+</head>
+
+<body bgcolor = 'black'>
+<div align = "center" >
+    </br></br></br>
+    <img src="../static/bibliopal_transparent_inverted.png" alt="BiblioPal Logo">
+</div>
+
+</br>
+<div align = "center" >
+    <img src="./static/mainbg.png" alt="features" width = 300>
+</div>
+
+<div align = "center" style="height:60px;">
+    </br></br>
+    <font color="white" size = 6 face = "arial"><strong>Please choose library:<strong></font></br></br>
+<form class="LIBRARYSelection" method="POST" action="/model">
+    <select name = "Name" id = "variable" name= libs method="GET" action="/" style="height: 30px;width: 400;font-size:15px; color: white; background-color: black">
+        {% for library in libs %}
+        <option value= "{{library}}" SELECTED>{{library}}</option>"
+        {% endfor %}
+    </select>
+    <button type="submit" value="submit" style="font-size:15px; height:30px; width:70px; border-radius:6px; color: white; background-color: black" id = "trial">Submit </button>
+</form>
+</div>
+
+</body>
+</html>
