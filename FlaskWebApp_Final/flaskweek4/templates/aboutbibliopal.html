@@ -1,0 +1,166 @@
+<head>
+    <meta charset="UTF-8">
+        <title>About Bibliopal</title>
+</head>
+
+<body style ='font-family: arial;'>
+    <div align = "center" style = "font-family: palatino; font-weight: bold; font-size: 22px" >
+        </br><p style = "display: inline; font-weight: bold; font-family: verdana;">ABOUT</p></br>
+       <img src="./static/bibliopal_transparent.png" alt="features">
+        </br></br></br>
+    </div>
+    
+<div align = "center" >
+    <table width = 60%>
+    <tr><td>
+            <p align = "left" style = "font-weight: bold; font-size: 20px;">What is BiblioPal?</p>
+    </td></tr>
+    <tr><td>
+        <p style = "display: inline;">BiblioPal is a tool to determine how libraries’ resources, staffing and spending choices affect library usage. </p>
+    </td></tr>
+    <tr><td>
+        </br>
+        <p align = "left" style = "display: inline; font-weight: bold; font-size: 20px">How can your library use BiblioPal?</p>
+    </td></tr>
+    
+    <tr><td>
+        <p><i> Use case #1:</i> Your library has increased funding next year (congratulations!). How can you best allocate those funds to efficiently increase library usage in your community? </p>
+        <p><i>Use case #2: </i> Your library funding is limited next year. Where can you remove resources such that it has minimal impact on library usage? </p>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/UseCase.png" alt="usecases" style = "width: 25em;">
+        </div>
+    </td></tr>
+    
+    <tr><td>
+        </br>
+        <p align = "left" style = "font-weight: bold; font-size: 20px">The data:</p>
+    </td></tr>
+    
+    <tr><td>
+        <p> The data used in this project is publicly available from the Institute of Museum and Library Services, which surveys over 9,000 public libraries in the United States annually.</p>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <a href="https://www.imls.gov/" target="_blank">
+            <img src="./static/IMLSLogo.png" alt="IMLS Logo" style = "width: 15em;">
+            </a>
+        </div>
+        </br></br>
+    </td></tr>
+    
+    <tr><td>
+        <p align = "left" style = "font-weight: bold; font-size: 20px;">Does library usage vary among public libraries in the United States?</p>
+    </td></tr>
+    
+    <tr><td>
+        <p style = "display: inline;"> Yes, library usage varies widely among public libraries in the United States.</p></br>
+        <p style = "display: inline;"> Library usage is defined as Annual Visits/Local population throughout this project.</p>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/Usage.png" alt="Usage" style = "width: 25em;">
+        </div>
+    </td></tr>
+    
+    <tr align = "right"><td>
+        <p style = "display: inline; font-size: 14px">*Data source: Institute of Museum and Library Services, 2015</p>
+        </br></br>
+    </td></tr>
+    
+    <tr><td>
+        <p align = "left" style = "font-weight: bold; font-size: 20px;">How can your library increase library usage?</p>
+    </td></tr>
+    
+    <tr><td>
+        <p style = "display: inline;"> Your libraries makes a lot of operational choices that may impact library usage:</p></br>
+    </td></tr>
+    <tr><td>
+        <div align = "center">
+            <img src="./static/LibChoices.png" alt="Choices" style = "width: 25em;">
+        </div>
+    </td></tr>
+    <tr><td>
+        <p style = "display: inline;">But which choices actually impact library usage and to what degree?</p></br></br>
+    </td></tr>
+    
+    <tr><td>
+        <p align = "left" style = "font-weight: bold; font-size: 20px;">The model:</p>
+    </td></tr>
+    <tr><td>
+        <p style = "display: inline;"> I used a random forest regressor model to determine how resources, staffing and spending choices impact library usage. Below, I plot Usage vs. Usage predicted by the random forest regressor as well as metrics describing the predictive value of the model.</p></br>
+    </td></tr>
+
+    <tr><td>
+        <div align = "center">
+            <img src="./static/RFresults.png" alt="Results" style = "width: 35em;">
+        </div>
+    </td></tr>
+    
+    <tr><td>
+        </br>
+        <p align = "left" style = "font-weight: bold; font-size: 20px;">Feature importance:</p>
+    </td></tr>
+    <tr><td>
+        <p style = "display: inline;"> Here, I plot feature importance for usage prediction from the random forest model.</p></br>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/feature_img_2.png" alt="Features" style = "width: 35em;">
+        </div>
+    </td></tr>
+    
+    <tr><td>
+        </br>
+        <p align = "left" style = "font-weight: bold; font-size: 20px;">How to use the BiblioPal application:</p>
+    </td></tr>
+    <tr><td>
+        <p style = "display: inline;"> 1. Choose the state where your library is located.</p></br>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/ChooseState.png" alt="Choose State" style = "width: 20em;">
+        </div>
+    </td></tr>
+    
+    <tr><td>
+        <p style = "display: inline;"> 2. Choose your library.</p></br>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/ChooseLibrary.png" alt="Choose Library" style = "width: 20em;">
+        </div>
+    </td></tr>
+    
+    <tr><td>
+        <p style = "display: inline;"> 3. Resource, Staff and Spending values are pre-populated with 2016 values (the latest year for which the data is available). Alter these values using up-down arrows or by directly typing new value within text box. </p></br>
+    </td></tr>
+    
+    <tr><td>
+        <div align = "center">
+            <img src="./static/Values.png" alt="User input" style = "width: 20em;">
+        </div>
+    </td></tr>
+        
+    <tr><td>
+        <p style = "display: inline;"> 4. Click Submit to see predicted usage and predicted visitor count.</p></br>
+    </td></tr>
+
+    <tr><td>
+        <div align = "center">
+        <img src="./static/Prediction.png" alt="Result" style = "width: 20em;">
+        </div>
+    </td></tr>
+
+    </table>
+</div>
+
+</body>
+</html>

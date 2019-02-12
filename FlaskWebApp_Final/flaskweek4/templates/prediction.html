@@ -1,0 +1,37 @@
+<head>
+    <meta charset="UTF-8">
+        <title>Prediction</title>
+</head>
+
+<body style ='font-family: arial;' bgcolor = 'D9D9D9'>
+    
+    <div align = "center" >
+        </br></br></br>
+        <a href = "/">
+        <img src="./static/bibliopal_transparent.png" alt="features">
+        </a>
+    </div>
+    
+    </br>
+    </br>
+    
+    <div align = "center" >
+    <p style = "font-size:150%; display:inline;">Your predicted library usage is:</p>
+    <p style = "font-size:150%; font-weight: bold; display:inline;">{{rfpred}}</p></br>
+    <p style = "display:inline;">*Usage = Annual visits/Local population</p>
+    </br> </br> </br>
+    <p style = "font-size:150%; display:inline;">Your predicted annual visit count is:</p>
+    <p style = "font-size:150%; font-weight: bold; display:inline;">{{PredVisit}}</p>
+    <div align = "center" >
+    
+    </br>
+    </br>
+    <button onclick="goBack()">Go Back</button>
+        
+    <script>
+        function goBack() {
+                window.history.back();
+        }
+    </script>
+</body>
+</html>
