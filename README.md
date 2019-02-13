@@ -1,6 +1,6 @@
 # Insight2019_Library-Project
 **Welcome to BiblioPal!** 
-This is a porject created by Olga Minkina over 3 weeks as an Insight Data Science Fellow (Jan-Mar 2019). 
+This is a project created by Olga Minkina over 3 weeks as an Insight Data Science Fellow in January 2019. 
 
 **What is BiblioPal?**
 
