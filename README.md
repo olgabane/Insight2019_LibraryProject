@@ -1,6 +1,14 @@
-# Insight2019_Library-Project
+# BiblioPal: A tool to predict how operational choices impact library usage.
+
 **Welcome to BiblioPal!** 
 This is a project created by Olga Minkina over 3 weeks as an Insight Data Science Fellow in January 2019. 
+
+**File structure:**
+
+1. library_project.ipynb: This research notebook contains data exploration, model development and model evaluation. For all research leading to this final project notebook, see the directory 'research_notebooks'.
+2. data.py: Functions used in library_project.ipynb to get, clean, and explore library data. 
+3. model.py: Functions used in library_project.ipynb to train models to predict library usage. 
+4. evaluate.py: Function used in library_project.ipynb to evaluate model performance. 
 
 **What is BiblioPal?**
 
@@ -35,7 +43,7 @@ I used a random forest regressor model to determine how resources, staffing and 
 
 **Web application**
 
-BiblioPal is available on the web at www.ominkina.com!
+BiblioPal is web app that allows libraries to use the model I've built. Although BiblioPal is no longer available on the web, I provide the code to run the app locally in the directory flask_web_app_final. 
 
 A library can use BiblioPal in the following way:
 1. Choose the state where your library is located.
