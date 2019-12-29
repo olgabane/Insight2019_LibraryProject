@@ -1,3 +1,7 @@
+"""
+Functions to plot and evaluate model results.
+"""
+
 import pandas as pd
 import numpy as np
 
