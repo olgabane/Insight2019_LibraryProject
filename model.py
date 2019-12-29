@@ -1,6 +1,7 @@
 """
 Functions to predict library usage using several models. 
 """
+
 import pandas as pd
 import numpy as np
 import random
@@ -9,39 +10,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 import matplotlib.pyplot as plt
-
-# def scale_features(df: pd.DataFrame) -> pd.DataFrame:
-#     """
-#     Scale all features to range between 0 and 1
-
-#     Args:
-#         df: features dataframe (with labels)
-
-#     Returns:
-#         df_scaled: scaled features dataframe
-#     """
-
-#     # instantiate scaler class
-#     scaler = MinMaxScaler()
-
-#     # Save labels and FSCSKEY IDs, and drop before scaling
-#     labels = list(df.usage)
-#     ids = list(df.FSCSKEY)
-#     df_features = df.drop(columns=['usage', 'FSCSKEY'])
-
-#     # Save columns; lost in scaling
-#     col_names = list(df_features.columns)
-
-#     # Scale features and convert to dataframe
-#     df_scaled = pd.DataFrame(scaler.fit_transform(df_features))
-#     # Replace columns names
-#     df_scaled.columns = col_names
-
-#     # Re-add usage label and FSCSKEY to scaled df 
-#     df_scaled['usage'] = labels
-#     df_scaled['FSCSKEY'] = ids
-
-#     return df_scaled
 
 def scale_features(df_train: pd.DataFrame, df_test: pd.DataFrame) -> tuple:
     """
